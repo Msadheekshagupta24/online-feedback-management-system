@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Feedback & Review Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Online Feedback & Review Management System</h2>
+
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <!-- Star Rating -->
+    <div class="stars">
+        <span onclick="setRating(1)">★</span>
+        <span onclick="setRating(2)">★</span>
+        <span onclick="setRating(3)">★</span>
+        <span onclick="setRating(4)">★</span>
+        <span onclick="setRating(5)">★</span>
+    </div>
+
+    <textarea id="comment" placeholder="Write your feedback"></textarea>
+
+    <button onclick="submitFeedback()">Submit Feedback</button>
+
+    <hr>
+
+    <h3>Admin Dashboard</h3>
+
+    <select onchange="filterFeedback(this.value)">
+        <option value="All">All Feedback</option>
+        <option value="Positive">Positive</option>
+        <option value="Neutral">Neutral</option>
+        <option value="Negative">Negative</option>
+    </select>
+
+    <p id="stats"></p>
+
+    <button onclick="exportCSV()">Export Feedback (CSV)</button>
+
+    <div id="feedbackList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+Add index.html
