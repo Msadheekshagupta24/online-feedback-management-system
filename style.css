@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 500px;
+    background: #ffffff;
+    padding: 25px;
+    margin: 60px auto;
+    border-radius: 14px;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #444;
+}
+
+input, select, textarea {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Star Rating */
+.stars {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 28px;
+}
+
+.stars span {
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.stars span.active {
+    color: #f1c40f;
+}
+
+/* Feedback cards */
+.feedback {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    border-left: 6px solid gray;
+}
+
+/* Category colors */
+.Positive {
+    border-left-color: #2ecc71;
+}
+
+.Neutral {
+    border-left-color: #f39c12;
+}
+
+.Negative {
+    border-left-color: #e74c3c;
+}
+
+/* Stats box */
+#stats {
+    margin-top: 12px;
+    padding: 10px;
+    background: #f1f3f6;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+hr {
+    margin: 25px 0;
+    border: none;
+    height: 1px;
+    background: #ddd;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .stars {
+        font-size: 22px;
+    }
+}
